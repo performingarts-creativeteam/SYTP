@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SYTP - 裾野ユースシアタープロジェクト">
   <title>SYTP - 裾野ユースシアタープロジェクト</title>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
@@ -12,11 +13,17 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: 'Noto Sans JP', sans-serif;
+      font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro', 'Yu Gothic', sans-serif;
       line-height: 1.8;
       color: #333;
       background: #f9f9f9;
+      visibility: visible;
+      opacity: 1;
     }
 
     /* ==================== HEADER ==================== */
@@ -28,6 +35,8 @@
       position: sticky;
       top: 0;
       z-index: 100;
+      min-height: 100px;
+      display: block;
     }
 
     .header-container {
@@ -92,11 +101,15 @@
 
     /* ==================== HERO SECTION ==================== */
     .hero {
-      background: linear-gradient(rgba(26, 0, 51, 0.7), rgba(45, 27, 78, 0.7)), 
-                  url('IMG_1927.JPG') center/cover;
+      background-image: linear-gradient(rgba(26, 0, 51, 0.7), rgba(45, 27, 78, 0.7)), 
+                        url('./IMG_1927.JPG');
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
       color: #fff;
       padding: 100px 20px;
       text-align: center;
+      min-height: 400px;
     }
 
     .hero-content {
@@ -167,6 +180,7 @@
 
     section {
       margin-bottom: 60px;
+      display: block;
     }
 
     h2 {
@@ -491,7 +505,7 @@
   <header>
     <div class="header-container">
       <div class="header-logo-section">
-        <img src="IMG_1927.JPG" alt="SYTP ロゴ" class="header-logo">
+        <img src="./IMG_1927.JPG" alt="SYTP ロゴ" class="header-logo">
         <div class="header-title">
           <h1>SYTP</h1>
           <p class="subtitle">裾野ユースシアタープロジェクト</p>
