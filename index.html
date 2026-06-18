@@ -101,7 +101,7 @@
 
     /* ==================== HERO SECTION ==================== */
     .hero {
-      background-image: linear-gradient(rgba(26, 0, 51, 0.7), rgba(45, 27, 78, 0.7)), 
+      background-image: linear-gradient(rgba(128, 171, 213, 0.7), rgba(45, 27, 78, 0.7)), 
                         url('IMG_1927.JPG');
       background-position: center;
       background-size: cover;
@@ -277,6 +277,32 @@
       font-size: 0.85rem;
       color: #999;
       font-weight: 600;
+    }
+
+    .pdf-preview {
+      width: 100%;
+      height: 300px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin-bottom: 15px;
+    }
+
+    .pdf-download-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: #d4af37;
+      color: #1a0033;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .pdf-download-link:hover {
+      background: #e5c158;
+      box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
     }
 
     /* ==================== SCHEDULE/TIMELINE ==================== */
@@ -525,7 +551,7 @@
   <section class="hero">
     <div class="hero-content">
       <h2>青少年と舞台をつなぐ</h2>
-      <p>演劇を通じた地域文化振興と青少年育成</p>
+      <p>演劇を通じた地域文化振興を目指している、舞台芸術クラブです</p>
       <div class="cta-buttons">
         <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
           お問い合わせ
@@ -542,14 +568,14 @@
       <h2>About SYTP</h2>
       <div class="about-container">
         <div class="about-text">
-          <p>SYTPは裾野市を中心とした青少年演劇クラブとして活動しています。演劇を通じた自己表現、コミュニケーション能力の向上、そして地域文化の振興を目指しています。</p>
-          <p>初心者から経験者まで、すべての世代が活躍できるステージを提供しており、公演活動を通じて多くの人と繋がる機会を創出しています。</p>
+          <p>SYTPは裾野市を中心とした舞台芸術クラブとして活動しています。演劇を通じた自己表現、コミュニケーション能力の向上、そして地域文化の振興を目指しています。</p>
+          <p>初心者から経験者まで、すべての世代が活躍できるステージへの参加、公演活動を通じて多くの人と繋がる機会を創出しています。</p>
         </div>
         <div>
           <ul class="about-features">
             <li>初心者大歓迎</li>
-            <li>年3回以上の公演</li>
-            <li>技術研修・指導</li>
+            <li>年1回以上の公演</li>
+            <li>ワークショップ開催</li>
             <li>地域イベント参加</li>
             <li>全年代が参加可能</li>
           </ul>
@@ -563,11 +589,12 @@
       <div class="card-grid">
         <div class="card">
           <div class="card-header">
-            <h3>新作公演決定</h3>
+            <h3>6月発信情報</h3>
           </div>
           <div class="card-body">
-            <p class="card-date">2026年夏</p>
-            <p>今年の夏は新作を上演予定です。詳細は後日発表いたします。</p>
+            <p class="card-date">2026年6月17日</p>
+            <iframe src="20260617175826.pdf" class="pdf-preview"></iframe>
+            <a href="20260617175826.pdf" download class="pdf-download-link">PDFをダウンロード</a>
           </div>
         </div>
 
@@ -577,7 +604,7 @@
           </div>
           <div class="card-body">
             <p class="card-date">随時更新</p>
-            <p>各公演のチケット販売状況や割引情報をお知らせします。</p>
+            <p>各公演のチケット販売状況をお知らせします。</p>
           </div>
         </div>
 
@@ -600,32 +627,32 @@
         <div class="timeline-item">
           <div class="timeline-marker">1</div>
           <div class="timeline-content">
-            <h4>春公演</h4>
-            <p>地域イベントでの初夏の公演。初心者向けの作品を予定。</p>
+            <h4>舞台公演</h4>
+            <p>地域イベントの公演に参加します。（三島市、裾野市）</p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-marker">2</div>
           <div class="timeline-content">
-            <h4>夏集中稽古</h4>
-            <p>7月～8月の集中演技トレーニング。技能向上のための重点期間。</p>
+            <h4>ワークショップ</h4>
+            <p>演劇技術や舞台芸術に関するワークショップを開催します。</p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-marker">3</div>
           <div class="timeline-content">
-            <h4>秋公演</h4>
-            <p>年間の最大規模公演。全メンバーが参加する大規模作品。</p>
+            <h4>イベント参加</h4>
+            <p>地域イベントに参加し、演劇を通じて地域社会とのつながりを深めます。</p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-marker">4</div>
           <div class="timeline-content">
-            <h4>冬の特別企画</h4>
-            <p>クリスマス時期の特別イベント。地域との交流企画も予定。</p>
+            <h4>映画</h4>
+            <p>短編映画の撮影に参加しました。</p>
           </div>
         </div>
       </div>
